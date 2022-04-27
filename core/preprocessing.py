@@ -3,6 +3,8 @@ from nltk.stem.snowball import SnowballStemmer
 from nltk.corpus import stopwords
 from bs4 import BeautifulSoup
 import re
+import string
+from sklearn.preprocessing import LabelEncoder
 
 class NewsPreprocessor:
     def __init__(self, X_train, y_train):
@@ -11,7 +13,7 @@ class NewsPreprocessor:
         self.y_train = y_train
         
         self.FREQWORDS = []
-        self.RAREWORDS = []
+        self.COMMONENOUGHWORDS = []
         
     def get_wordcount(self):
         self.X_train.str.split().apply(self.vocab.update)
@@ -19,17 +21,21 @@ class NewsPreprocessor:
     def get_freqwords(self, num_words):
         FREQWORDS = set([w for (w, wc) in self.vocab.most_common(num_words)])
     
-    def get_rarewords(self, filter_val):
+    def get_common_enough_words(self, filter_val):
         vocab_dict = dict(self.vocab)
         for k, v in vocab_dict.items():
-            if v < filter_val:
-                self.RAREWORDS.append(k)
+            if v > filter_val:
+                self.COMMONENOUGHWORDS.append(k)
     
     def to_lowercase(self, doc):
             """ 
             convert all text to lowercase and remove newline characters
             """
             return doc.lower().replace("\r", " ").replace("\n", " ")
+            
+    def strip_punctuation(self, doc):
+        return doc.translate(str.maketrans('', '', string.punctuation))
+     
 
     def strip_html_tags(self, doc):
         """
@@ -47,7 +53,7 @@ class NewsPreprocessor:
         remove special characters from the text
         """
         # links
-        return re.sub("(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)|[«»]", " ", doc)
+        return re.sub("(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)|[–«»%()]", " ", doc)
 
     def remove_stopwords(self, doc):
         """
@@ -64,7 +70,6 @@ class NewsPreprocessor:
         return ''.join(i for i in doc if not i.isdigit())
     
     
-
     def remove_freqwords(self, doc):
         """
         remove the frequent words
@@ -75,8 +80,12 @@ class NewsPreprocessor:
         """
         remove the rare words
         """
-        return " ".join([word for word in str(doc).split() if word not in self.RAREWORDS])
+        return " ".join([word for word in str(doc).split() if word in self.COMMONENOUGHWORDS])
 
     def stemmer(self, doc):
         stemmer = SnowballStemmer("russian")
         return ' '.join([stemmer.stem(word) for word in doc.split(' ')])
+
+    def label_encoder(self):
+        encoder = LabelEncoder()
+        return encoder.fit_transform(self.y_train)
