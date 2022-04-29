@@ -1,0 +1,440 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global}
+  \entry{saTextbook}{book}{}
+    \name{author}{1}{}{%
+      {{hash=LB}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Bing},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge University Press}%
+    }
+    \strng{namehash}{LB1}
+    \strng{fullhash}{LB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{}
+    \field{title}{Sentiment Analysis: Mining Opinions, Sentiments, and
+  Emotions}
+    \field{year}{2015}
+  \endentry
+
+  \entry{deepSAreview}{article}{}
+    \name{author}{7}{}{%
+      {{hash=AQT}{%
+         family={Ain},
+         familyi={A\bibinitperiod},
+         given={Qurat\bibnamedelima Tul},
+         giveni={Q\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=AM}{%
+         family={Ali},
+         familyi={A\bibinitperiod},
+         given={Mubashir},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=RA}{%
+         family={Riaz},
+         familyi={R\bibinitperiod},
+         given={Amna},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=NA}{%
+         family={Noureen},
+         familyi={N\bibinitperiod},
+         given={Amna},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KM}{%
+         family={Kamran},
+         familyi={K\bibinitperiod},
+         given={Muhammad},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HB}{%
+         family={Hayat},
+         familyi={H\bibinitperiod},
+         given={Babar},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=RA}{%
+         family={Rehman},
+         familyi={R\bibinitperiod},
+         given={A},
+         giveni={A},
+      }}%
+    }
+    \strng{namehash}{AQT+1}
+    \strng{fullhash}{AQTAMRANAKMHBRA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{}
+    \field{number}{6}
+    \field{pages}{424}
+    \field{title}{Sentiment analysis using deep learning techniques: a review}
+    \field{volume}{8}
+    \field{journaltitle}{Int J Adv Comput Sci Appl}
+    \field{year}{2017}
+  \endentry
+
+  \entry{parrots}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=BEM}{%
+         family={Bender},
+         familyi={B\bibinitperiod},
+         given={Emily\bibnamedelima M.},
+         giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=GT}{%
+         family={Gebru},
+         familyi={G\bibinitperiod},
+         given={Timnit},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=MMA}{%
+         family={McMillan-Major},
+         familyi={M\bibinithyphendelim M\bibinitperiod},
+         given={Angelina},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Shmitchell},
+         familyi={S\bibinitperiod},
+         given={Shmargaret},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Association for Computing Machinery}%
+    }
+    \strng{namehash}{BEM+1}
+    \strng{fullhash}{BEMGTMMASS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2021}
+    \field{labeldatesource}{}
+    \field{abstract}{%
+    The past 3 years of work in NLP have been characterized by the development
+  and deployment of ever larger language models, especially for English. BERT,
+  its variants, GPT-2/3, and others, most recently Switch-C, have pushed the
+  boundaries of the possible both through architectural innovations and through
+  sheer size. Using these pretrained models and the methodology of fine-tuning
+  them for specific tasks, researchers have extended the state of the art on a
+  wide array of tasks as measured by leaderboards on specific benchmarks for
+  English. In this paper, we take a step back and ask: How big is too big? What
+  are the possible risks associated with this technology and what paths are
+  available for mitigating those risks? We provide recommendations including
+  weighing the environmental and financial costs first, investing resources
+  into curating and carefully documenting datasets rather than ingesting
+  everything on the web, carrying out pre-development exercises evaluating how
+  the planned approach fits into research and development goals and supports
+  stakeholder values, and encouraging research directions beyond ever larger
+  language models.%
+    }
+    \field{booktitle}{Proceedings of the 2021 ACM Conference on Fairness,
+  Accountability, and Transparency}
+    \verb{doi}
+    \verb 10.1145/3442188.3445922
+    \endverb
+    \field{isbn}{9781450383097}
+    \field{pages}{610–623}
+    \field{series}{FAccT '21}
+    \field{title}{On the Dangers of Stochastic Parrots: Can Language Models Be
+  Too Big?}
+    \verb{url}
+    \verb https://doi.org/10.1145/3442188.3445922
+    \endverb
+    \list{location}{1}{%
+      {Virtual Event, Canada}%
+    }
+    \field{year}{2021}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{fivebias}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HD}{%
+         family={Hovy},
+         familyi={H\bibinitperiod},
+         given={Dirk},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=PS}{%
+         family={Prabhumoye},
+         familyi={P\bibinitperiod},
+         given={Shrimai},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{HDPS1}
+    \strng{fullhash}{HDPS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2021}
+    \field{labeldatesource}{}
+    \field{number}{8}
+    \field{pages}{e12432}
+    \field{title}{Five sources of bias in natural language processing}
+    \field{volume}{15}
+    \field{journaltitle}{Language and Linguistics Compass}
+    \field{year}{2021}
+  \endentry
+
+  \entry{bautin2008international}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=BM}{%
+         family={Bautin},
+         familyi={B\bibinitperiod},
+         given={Mikhail},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=VL}{%
+         family={Vijayarenu},
+         familyi={V\bibinitperiod},
+         given={Lohit},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Skiena},
+         familyi={S\bibinitperiod},
+         given={Steven},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BMVLSS1}
+    \strng{fullhash}{BMVLSS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2008}
+    \field{labeldatesource}{}
+    \field{booktitle}{Proceedings of the International AAAI Conference on Web
+  and Social Media}
+    \field{number}{1}
+    \field{pages}{19\bibrangedash 26}
+    \field{title}{International sentiment analysis for news and blogs}
+    \field{volume}{2}
+    \field{year}{2008}
+  \endentry
+
+  \entry{chineseSentiment}{article}{}
+    \name{author}{3}{}{%
+      {{hash=PH}{%
+         family={Peng},
+         familyi={P\bibinitperiod},
+         given={Haiyun},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=CE}{%
+         family={Cambria},
+         familyi={C\bibinitperiod},
+         given={Erik},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=HA}{%
+         family={Hussain},
+         familyi={H\bibinitperiod},
+         given={Amir},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{PHCEHA1}
+    \strng{fullhash}{PHCEHA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{}
+    \field{number}{4}
+    \field{pages}{423\bibrangedash 435}
+    \field{title}{A review of sentiment analysis research in Chinese language}
+    \field{volume}{9}
+    \field{journaltitle}{Cognitive Computation}
+    \field{year}{2017}
+  \endentry
+
+  \entry{yemenSocial}{thesis}{}
+    \name{author}{3}{}{%
+      {{hash=BAK}{%
+         family={Bourret},
+         familyi={B\bibinitperiod},
+         given={Andrew\bibnamedelima K.},
+         giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=WJD}{%
+         family={Wines},
+         familyi={W\bibinitperiod},
+         given={Joshua\bibnamedelima D.},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=MJM}{%
+         family={Mendes},
+         familyi={M\bibinitperiod},
+         given={Jason\bibnamedelima M.},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BAKWJDMJM1}
+    \strng{fullhash}{BAKWJDMJM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{}
+    \field{title}{Assessing Sentiment in Conflict Zones Through Social Media}
+    \list{institution}{1}{%
+      {Naval Postgraduate School, Monterey, California}%
+    }
+    \field{type}{phdthesis}
+    \field{year}{2016}
+  \endentry
+
+  \entry{fakeNews}{article}{}
+    \name{author}{4}{}{%
+      {{hash=AMA}{%
+         family={Alonso},
+         familyi={A\bibinitperiod},
+         given={Miguel\bibnamedelima A},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=VD}{%
+         family={Vilares},
+         familyi={V\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=GRC}{%
+         family={G{\'o}mez-Rodr{\'\i}guez},
+         familyi={G\bibinithyphendelim R\bibinitperiod},
+         given={Carlos},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=VJ}{%
+         family={Vilares},
+         familyi={V\bibinitperiod},
+         given={Jes{\'u}s},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Multidisciplinary Digital Publishing Institute}%
+    }
+    \strng{namehash}{AMA+1}
+    \strng{fullhash}{AMAVDGRCVJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2021}
+    \field{labeldatesource}{}
+    \field{number}{11}
+    \field{pages}{1348}
+    \field{title}{Sentiment analysis for fake news detection}
+    \field{volume}{10}
+    \field{journaltitle}{Electronics}
+    \field{year}{2021}
+  \endentry
+
+  \entry{dataset}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{labeldatesource}{nodate}
+  \field{howpublished}{\url{https://www.kaggle.com/competitions/sentiment-analysis-in-russian/data}}
+    \field{note}{Accessed: 2022-02-20}
+    \field{title}{Sentiment Analysis in Russian}
+  \endentry
+
+  \entry{russianNLP}{article}{}
+    \name{author}{3}{}{%
+      {{hash=RA}{%
+         family={Romanov},
+         familyi={R\bibinitperiod},
+         given={Aleksandr},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=LK}{%
+         family={Lomotin},
+         familyi={L\bibinitperiod},
+         given={Konstantin},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=KE}{%
+         family={Kozolva},
+         familyi={K\bibinitperiod},
+         given={Ekaterina},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RALKKE1}
+    \strng{fullhash}{RALKKE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{}
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 17}
+    \field{title}{Application of Natural Language Processing Algorithms to the
+  Task of Automatic Classification of Russian Scientific Texts}
+    \field{volume}{18}
+    \field{journaltitle}{Data Science Journal}
+    \field{year}{2019}
+  \endentry
+
+  \entry{nltk}{book}{}
+    \name{author}{3}{}{%
+      {{hash=BS}{%
+         family={Bird},
+         familyi={B\bibinitperiod},
+         given={Steven},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KE}{%
+         family={Klein},
+         familyi={K\bibinitperiod},
+         given={Ewan},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=LE}{%
+         family={Loper},
+         familyi={L\bibinitperiod},
+         given={Edward},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {" O'Reilly Media, Inc."}%
+    }
+    \strng{namehash}{BSKELE1}
+    \strng{fullhash}{BSKELE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2009}
+    \field{labeldatesource}{}
+    \field{title}{Natural language processing with Python: analyzing text with
+  the natural language toolkit}
+    \field{year}{2009}
+  \endentry
+\enddatalist
+\endinput
